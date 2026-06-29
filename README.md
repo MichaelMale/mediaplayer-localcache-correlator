@@ -53,6 +53,16 @@ The CSV contains: `cache_file_name`, `cache_full_path`, `cache_key_name`,
 
 Python 3 standard library only — no third-party packages required.
 
+## Testing
+
+A `pytest` suite covers the cache-key generation, URI normalisation, column
+discovery, cache indexing, and an end-to-end correlation run:
+
+```
+pip install pytest
+pytest
+```
+
 ## Provenance
 
 `mediaplayer_cache_matcher.py` was recovered from the PyInstaller-bundled
